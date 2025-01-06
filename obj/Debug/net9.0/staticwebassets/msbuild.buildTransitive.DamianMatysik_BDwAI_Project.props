@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/DamianMatysik_BDwAI_Project.props" />
+</Project>
