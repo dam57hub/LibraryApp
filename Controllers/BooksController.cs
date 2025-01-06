@@ -1,111 +1,96 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LibraryApp.Data;
+using LibraryApp.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
-namespace LibraryApp.Controllers
+public class BooksController : Controller
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class BooksController : ControllerBase
+    private readonly LibraryContext _context;
+    private readonly ILogger<BooksController> _logger;
+
+    public BooksController(LibraryContext context, ILogger<BooksController> logger)
     {
-        private readonly LibraryContext _context;
+        _context = context;
+        _logger = logger;
+    }
 
-        public BooksController(LibraryContext context)
+    // GET: Books
+    public async Task<IActionResult> Index()
+    {
+        var books = await _context.Books
+            .Include(b => b.Author)
+            .Include(b => b.Borrowings)
+            .AsNoTracking()
+            .ToListAsync();
+
+        return View(books);
+    }
+
+    // GET: Books/Create
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Create()
+    {
+        ViewBag.Authors = await _context.Authors.ToListAsync();
+        return View();
+    }
+
+    // POST: Books/Create
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Create([Bind("Title,ISBN,AuthorId")] Book book)
+    {
+        foreach (var modelState in ModelState)
         {
-            _context = context;
-        }
-
-        // GET: api/Books
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
-        {
-            return await _context.Books
-                .Include(b => b.Authors)
-                .ToListAsync();
-        }
-
-        // GET: api/Books/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Book>> GetBook(int id)
-        {
-            var book = await _context.Books
-                .Include(b => b.Authors)
-                .FirstOrDefaultAsync(b => b.BookId == id);
-
-            if (book == null)
+            _logger.LogInformation($"Key: {modelState.Key}, Value: {modelState.Value?.AttemptedValue}");
+            if (modelState.Value?.Errors.Count > 0)
             {
-                return NotFound();
-            }
-
-            return book;
-        }
-
-        // POST: api/Books
-        [HttpPost]
-        public async Task<ActionResult<Book>> PostBook(Book book)
-        {
-            // Walidacja modelu
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            _context.Books.Add(book);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetBook), new { id = book.BookId }, book);
-        }
-
-        // PUT: api/Books/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutBook(int id, Book book)
-        {
-            if (id != book.BookId)
-            {
-                return BadRequest();
-            }
-
-            // Walidacja modelu
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            _context.Entry(book).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Books.Any(e => e.BookId == id))
+                foreach (var error in modelState.Value.Errors)
                 {
-                    return NotFound();
+                    _logger.LogInformation($"Error for {modelState.Key}: {error.ErrorMessage}");
+                }
+            }
+        }
+
+        _logger.LogInformation($"Received book data - Title: {book.Title}, ISBN: {book.ISBN}, AuthorId: {book.AuthorId}");
+
+        ModelState.Remove("Author");
+        
+        try
+        {
+            if (ModelState.IsValid)
+            {
+                var authorExists = await _context.Authors.AnyAsync(a => a.AuthorId == book.AuthorId);
+                if (!authorExists)
+                {
+                    ModelState.AddModelError("AuthorId", "Selected author does not exist");
+                    _logger.LogWarning($"Invalid AuthorId: {book.AuthorId}");
                 }
                 else
                 {
-                    throw;
+                    _context.Books.Add(book);
+                    await _context.SaveChangesAsync();
+                    _logger.LogInformation($"Successfully created book with ID: {book.BookId}");
+                    return RedirectToAction(nameof(Index));
                 }
             }
-
-            return NoContent();
-        }
-
-        // DELETE: api/Books/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBook(int id)
-        {
-            var book = await _context.Books.FindAsync(id);
-            if (book == null)
+            else
             {
-                return NotFound();
+                var errors = string.Join("; ", ModelState.Values
+                    .SelectMany(x => x.Errors)
+                    .Select(x => x.ErrorMessage));
+                _logger.LogWarning($"Invalid ModelState: {errors}");
             }
-
-            _context.Books.Remove(book);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
         }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error creating book: {ex}");
+            ModelState.AddModelError("", "Unable to save the book. Please try again.");
+        }
+
+        ViewBag.Authors = await _context.Authors.ToListAsync();
+        return View(book);
     }
 }

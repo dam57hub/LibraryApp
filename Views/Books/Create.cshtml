@@ -1,0 +1,48 @@
+@model LibraryApp.Models.Book
+
+@{
+    ViewData["Title"] = "Create Book";
+}
+
+<h1>Create Book</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" required />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ISBN" class="control-label"></label>
+                <input asp-for="ISBN" class="form-control" required />
+                <span asp-validation-for="ISBN" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="AuthorId" class="control-label">Author</label>
+                <select asp-for="AuthorId" class="form-control">
+                    <option value="">-- Select Author --</option>
+                    @foreach (var author in (List<LibraryApp.Models.Author>)ViewBag.Authors)
+                    {
+                        <option value="@author.AuthorId">@author.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="AuthorId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

@@ -28,6 +28,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Books/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Shared/_ValidationScriptsPartial.cshtml]

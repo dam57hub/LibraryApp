@@ -1,15 +1,16 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using LibraryApp.Models;
 
 namespace LibraryApp.Data
 {
-    public class LibraryContext : DbContext
+    public class LibraryContext : IdentityDbContext
     {
         public LibraryContext(DbContextOptions<LibraryContext> options)
             : base(options)
         {
         }
 
-        // Definicje DbSet dla każdej encji
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Borrower> Borrowers { get; set; }
@@ -19,26 +20,12 @@ namespace LibraryApp.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Konfiguracja relacji wiele-do-wielu między Book a Author
+            // Configure the Book-Author relationship
             modelBuilder.Entity<Book>()
-                .HasMany(b => b.Authors)
+                .HasOne(b => b.Author)
                 .WithMany(a => a.Books)
-                .UsingEntity<Dictionary<string, object>>(
-                    "BookAuthors",
-                    j => j.HasOne<Author>().WithMany(),
-                    j => j.HasOne<Book>().WithMany());
-
-            // Konfiguracja relacji jeden-do-wielu między Borrowing a Book
-            modelBuilder.Entity<Borrowing>()
-                .HasOne(b => b.Book)
-                .WithMany(bk => bk.Borrowings)
-                .HasForeignKey(b => b.BookId);
-
-            // Konfiguracja relacji jeden-do-wielu między Borrowing a Borrower
-            modelBuilder.Entity<Borrowing>()
-                .HasOne(b => b.Borrower)
-                .WithMany(br => br.Borrowings)
-                .HasForeignKey(b => b.BorrowerId);
+                .HasForeignKey(b => b.AuthorId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
