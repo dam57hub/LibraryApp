@@ -8,47 +8,62 @@ namespace LibraryApp.Data
     {
         public static async Task Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = new LibraryContext(
-                serviceProvider.GetRequiredService<DbContextOptions<LibraryContext>>()))
-            {
-                var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-                var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+            var context = serviceProvider.GetRequiredService<LibraryContext>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-                // Ensure Admin role exists
+            // Ensure the database is created
+            context.Database.EnsureCreated();
+
+            // Check if there are any users
+            if (!context.Users.Any())
+            {
+                // Create roles if they don't exist
                 if (!await roleManager.RoleExistsAsync("Admin"))
                 {
                     await roleManager.CreateAsync(new IdentityRole("Admin"));
                 }
-
-                // Create admin user if it doesn't exist
-                var adminEmail = "admin@library.com";
-                if (await userManager.FindByEmailAsync(adminEmail) == null)
+                if (!await roleManager.RoleExistsAsync("User"))
                 {
-                    var admin = new IdentityUser
-                    {
-                        UserName = adminEmail,
-                        Email = adminEmail,
-                        EmailConfirmed = true
-                    };
-
-                    var result = await userManager.CreateAsync(admin, "Admin123!");
-                    if (result.Succeeded)
-                    {
-                        await userManager.AddToRoleAsync(admin, "Admin");
-                    }
+                    await roleManager.CreateAsync(new IdentityRole("User"));
                 }
 
-                if (!context.Authors.Any())
+                // Create admin user
+                var adminUser = new ApplicationUser
                 {
-                    var authors = new[]
-                    {
-                        new Author { Name = "J.K. Rowling", Books = new List<Book>() },
-                        new Author { Name = "George R.R. Martin", Books = new List<Book>() },
-                        new Author { Name = "Stephen King", Books = new List<Book>() },
-                        new Author { Name = "J.R.R. Tolkien", Books = new List<Book>() }
-                    };
+                    UserName = "admin@library.com",
+                    Email = "admin@library.com",
+                    EmailConfirmed = true
+                };
 
-                    context.Authors.AddRange(authors);
+                var result = await userManager.CreateAsync(adminUser, "Admin123!");
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(adminUser, "Admin");
+                }
+            }
+
+            // Add other seed data if needed
+            if (!context.Authors.Any())
+            {
+                // Add sample authors
+                context.Authors.AddRange(
+                    new Author { Name = "George Orwell" },
+                    new Author { Name = "J.K. Rowling" }
+                );
+                await context.SaveChangesAsync();
+            }
+
+            // Add sample books if none exist
+            if (!context.Books.Any())
+            {
+                var author = await context.Authors.FirstOrDefaultAsync();
+                if (author != null)
+                {
+                    context.Books.AddRange(
+                        new Book { Title = "1984", ISBN = "978-0451524935", AuthorId = author.AuthorId },
+                        new Book { Title = "Animal Farm", ISBN = "978-0451526342", AuthorId = author.AuthorId }
+                    );
                     await context.SaveChangesAsync();
                 }
             }

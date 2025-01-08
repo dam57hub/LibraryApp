@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DamianMatysik_BDwAI_Project.kd7kieiwrp.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qDOprVIgitLUJHXJ3p35rXl555VWelleGBP5XWSRt5M="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1096"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qDOprVIgitLUJHXJ3p35rXl555VWelleGBP5XWSRt5M=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 16:42:10 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1096"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qDOprVIgitLUJHXJ3p35rXl555VWelleGBP5XWSRt5M=\u0022"},{"Name":"Last-Modified","Value":"Wed, 08 Jan 2025 18:45:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.kd7kieiwrp.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DamianMatysik_BDwAI_Project.kd7kieiwrp.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kd7kieiwrp"},{"Name":"integrity","Value":"sha256-qDOprVIgitLUJHXJ3p35rXl555VWelleGBP5XWSRt5M="},{"Name":"label","Value":"_content/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1096"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qDOprVIgitLUJHXJ3p35rXl555VWelleGBP5XWSRt5M=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 16:42:10 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1096"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qDOprVIgitLUJHXJ3p35rXl555VWelleGBP5XWSRt5M=\u0022"},{"Name":"Last-Modified","Value":"Wed, 08 Jan 2025 18:45:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DamianMatysik_BDwAI_Project/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

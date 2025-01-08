@@ -1,4 +1,4 @@
-namespace DamianMatysik_BDwAI_Project.Models;
+namespace LibraryApp.Models;
 
 public class ErrorViewModel
 {

@@ -93,4 +93,62 @@ public class BooksController : Controller
         ViewBag.Authors = await _context.Authors.ToListAsync();
         return View(book);
     }
+
+    // GET: Books/Delete/{id}
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var book = await _context.Books
+            .Include(b => b.Author)
+            .Include(b => b.Borrowings)
+            .FirstOrDefaultAsync(b => b.BookId == id);
+
+        if (book == null)
+        {
+            return NotFound();
+        }
+
+        return View(book);
+    }
+
+    // POST: Books/Delete/{id}
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        var book = await _context.Books
+            .Include(b => b.Borrowings)
+            .FirstOrDefaultAsync(b => b.BookId == id);
+
+        if (book == null)
+        {
+            return NotFound();
+        }
+
+        try
+        {
+            if (book.Borrowings.Any(b => b.ReturnDate == null))
+            {
+                ModelState.AddModelError("", "Cannot delete book while it is borrowed.");
+                return View(book);
+            }
+
+            _context.Books.Remove(book);
+            await _context.SaveChangesAsync();
+            _logger.LogInformation($"Successfully deleted book with ID: {id}");
+            return RedirectToAction(nameof(Index));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error deleting book: {ex}");
+            ModelState.AddModelError("", "Unable to delete the book. Please try again.");
+            return View(book);
+        }
+    }
 }

@@ -1,6 +1,8 @@
+using Microsoft.Extensions.DependencyInjection;
 using LibraryApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using LibraryApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,9 +16,21 @@ builder.Services.AddDbContext<LibraryContext>(options =>
     ));
 
 // Add Identity
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<LibraryContext>();
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => 
+{
+    options.SignIn.RequireConfirmedAccount = false;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequiredLength = 6;
+})
+.AddRoles<IdentityRole>()
+.AddEntityFrameworkStores<LibraryContext>();
+
+// Add authentication/authorization services
+builder.Services.AddAuthentication()
+    .AddCookie();
 
 var app = builder.Build();
 

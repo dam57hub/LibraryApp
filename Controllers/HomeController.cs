@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using DamianMatysik_BDwAI_Project.Models;
+using LibraryApp.Models;
 
-namespace DamianMatysik_BDwAI_Project.Controllers;
+namespace LibraryApp.Controllers;
 
 public class HomeController : Controller
 {
