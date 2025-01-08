@@ -8,6 +8,7 @@ namespace LibraryApp.Models
         public string UserId { get; set; }
         public required ApplicationUser User { get; set; }
         public DateTime BorrowDate { get; set; }
+        public DateTime ExpectedReturnDate { get; set; }
         public DateTime? ReturnDate { get; set; }
     }
 }

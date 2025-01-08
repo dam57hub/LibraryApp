@@ -1,0 +1,93 @@
+@model IEnumerable<LibraryApp.Models.Book>
+
+@{
+    ViewData["Title"] = "Manage Book Loans";
+}
+
+<h1>Manage Book Loans</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Status</th>
+            <th>Current Borrower</th>
+            <th>Expected Return</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            var currentBorrowing = book.Borrowings?.FirstOrDefault(b => b.ReturnDate == null);
+            var isOverdue = currentBorrowing?.ExpectedReturnDate < DateTime.Now;
+            <tr class="@(isOverdue == true ? "table-danger" : "")">
+                <td>@book.Title</td>
+                <td>@(book.Author?.Name ?? "No Author")</td>
+                <td>@book.ISBN</td>
+                <td>@(currentBorrowing != null ? "Borrowed" : "Available")</td>
+                <td>
+                    @(currentBorrowing?.User?.UserName ?? "-")
+                </td>
+                <td>
+                    @(currentBorrowing?.ExpectedReturnDate.ToString("yyyy-MM-dd") ?? "-")
+                </td>
+                <td>
+                    @if (currentBorrowing != null)
+                    {
+                        <form asp-action="ReturnBook" method="post" style="display: inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="bookId" value="@book.BookId" />
+                            <button type="submit" class="btn btn-success btn-sm">Accept Return</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#lendModal-@book.BookId">
+                            Lend Book
+                        </button>
+
+                        <!-- Modal for lending book -->
+                        <div class="modal fade" id="lendModal-@book.BookId" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Lend Book: @book.Title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <form asp-action="LendBook" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <div class="modal-body">
+                                            <input type="hidden" name="bookId" value="@book.BookId" />
+                                            <div class="mb-3">
+                                                <label for="userId" class="form-label">Select User</label>
+                                                <select class="form-control" name="userId" required>
+                                                    <option value="">-- Select User --</option>
+                                                    @foreach (var user in ViewBag.Users)
+                                                    {
+                                                        <option value="@user.Id">@user.UserName</option>
+                                                    }
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="expectedReturnDate" class="form-label">Expected Return Date</label>
+                                                <input type="date" class="form-control" name="expectedReturnDate" required 
+                                                       min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Lend Book</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> 
