@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/DamianMatysik_BDwAI_Project.kd7kieiwrp.bundle.scp.css"
     },
     {
+      "Id": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css",
+      "PackagePath": "staticwebassets/css/custom.css"
+    },
+    {
       "Id": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

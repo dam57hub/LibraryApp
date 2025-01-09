@@ -269,3 +269,4 @@
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/DamianMatysik_BDwAI_Project.pdb
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/DamianMatysik_BDwAI_Project.genruntimeconfig.cache
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/ref/DamianMatysik_BDwAI_Project.dll
+/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz

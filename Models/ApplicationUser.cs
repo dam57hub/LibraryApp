@@ -17,5 +17,7 @@ namespace LibraryApp.Models
             get => _borrowings ?? (_borrowings = new List<Borrowing>());
             set => _borrowings = value ?? new List<Borrowing>();
         }
+
+        public ICollection<Review> Reviews { get; set; }
     }
 } 

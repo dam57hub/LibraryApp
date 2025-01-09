@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HebYqgeiCaaU3/RLIeRvrPDewp8Xy4FSeSpCV/nlztY=",
+  "Hash": "jNQU4PYof50P/sEgy9bgRmJgniV8i2MhHeses9356Ok=",
   "Source": "DamianMatysik_BDwAI_Project",
   "BasePath": "_content/DamianMatysik_BDwAI_Project",
   "Mode": "Default",
@@ -3209,6 +3209,27 @@
       "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
+      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "SourceId": "DamianMatysik_BDwAI_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DamianMatysik_BDwAI_Project",
+      "RelativePath": "css/custom#[.{fingerprint=gf2v7ucdge}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jmpd7riyov",
+      "Integrity": "Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css"
+    },
+    {
       "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qfr28sqcy1-ft3s53vfgj.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -4026,6 +4047,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/scopedcss/projectbundle/DamianMatysik_BDwAI_Project.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css",
+      "SourceId": "DamianMatysik_BDwAI_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/",
+      "BasePath": "_content/DamianMatysik_BDwAI_Project",
+      "RelativePath": "css/custom#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gf2v7ucdge",
+      "Integrity": "9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/custom.css"
     },
     {
       "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/site.css",
@@ -5352,6 +5394,304 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/custom.css",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000765696784"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1305"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.css",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.css.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.gf2v7ucdge.css",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000765696784"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1305"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gf2v7ucdge"
+        },
+        {
+          "Name": "label",
+          "Value": "css/custom.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.gf2v7ucdge.css",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gf2v7ucdge"
+        },
+        {
+          "Name": "label",
+          "Value": "css/custom.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.gf2v7ucdge.css.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gf2v7ucdge"
+        },
+        {
+          "Name": "label",
+          "Value": "css/custom.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw="
+        }
+      ]
+    },
     {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-b9sayid5wm.gz",
