@@ -4,10 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using LibraryApp.Data;
 using LibraryApp.Models;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
 namespace LibraryApp.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class BorrowingsController : Controller
     {
         private readonly LibraryContext _context;
@@ -19,6 +20,7 @@ namespace LibraryApp.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Manage()
         {
             var books = await _context.Books
@@ -47,6 +49,7 @@ namespace LibraryApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> LendBook(int bookId, string userId, DateTime expectedReturnDate)
         {
             var book = await _context.Books
@@ -90,6 +93,7 @@ namespace LibraryApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ReturnBook(int bookId)
         {
             var borrowing = await _context.Borrowings
@@ -111,6 +115,26 @@ namespace LibraryApp.Controllers
                 _logger.LogError($"Error returning book: {ex}");
                 return BadRequest("Error returning book");
             }
+        }
+
+        [Authorize]
+        public async Task<IActionResult> MyBooks()
+        {
+            if (User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Manage");
+            }
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var myBorrowings = await _context.Borrowings
+                .Include(b => b.Book)
+                    .ThenInclude(b => b.Author)
+                .Where(b => b.UserId == userId && b.ReturnDate == null)
+                .OrderBy(b => b.ExpectedReturnDate)
+                .AsNoTracking()
+                .ToListAsync();
+
+            return View(myBorrowings);
         }
     }
 } 

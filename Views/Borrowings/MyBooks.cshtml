@@ -1,0 +1,50 @@
+@model IEnumerable<LibraryApp.Models.Borrowing>
+
+@{
+    ViewData["Title"] = "My Books";
+}
+
+<h1>My Borrowed Books</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Borrow Date</th>
+            <th>Expected Return Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var borrowing in Model)
+        {
+            var isOverdue = borrowing.ExpectedReturnDate < DateTime.Now;
+            <tr class="@(isOverdue ? "table-danger" : "")">
+                <td>@borrowing.Book.Title</td>
+                <td>@(borrowing.Book.Author?.Name ?? "No Author")</td>
+                <td>@borrowing.Book.ISBN</td>
+                <td>@borrowing.BorrowDate.ToString("yyyy-MM-dd")</td>
+                <td>@borrowing.ExpectedReturnDate.ToString("yyyy-MM-dd")</td>
+                <td>
+                    @if (isOverdue)
+                    {
+                        <span class="text-danger">Overdue</span>
+                    }
+                    else
+                    {
+                        <span>Active</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        You currently have no borrowed books.
+    </div>
+} 
