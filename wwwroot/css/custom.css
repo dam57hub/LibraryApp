@@ -1,64 +1,110 @@
-/* Modern Apple-inspired design */
+/* Modern Apple-inspired design with enhanced colors */
 :root {
     --primary-color: #0071E3;
     --secondary-color: #1D1D1F;
     --success-color: #29B35B;
     --danger-color: #FF3B30;
     --warning-color: #FF9F0A;
-    --background-color: #FBFBFD;
+    --background-color: #f0f2f5;
     --card-background: #FFFFFF;
     --text-primary: #1D1D1F;
     --text-secondary: #86868B;
     --border-color: #E5E5E7;
+    --nav-hover: #fff5e9;
+    --gradient-start: #FF512F;
+    --gradient-middle: #F09819;
+    --gradient-end: #FFEB3B;
 }
 
 body {
     background-color: var(--background-color);
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(135deg, 
+        rgba(255, 81, 47, 0.8) 0%, 
+        rgba(240, 152, 25, 0.8) 46%, 
+        rgba(255, 235, 59, 0.8) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Sintony', sans-serif;
     color: var(--text-primary);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-weight: 400;
 }
 
 /* Navigation */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.72) !important;
+    background: rgba(255, 255, 255, 0.85) !important;
     backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: none !important;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
 }
 
 .navbar-brand {
-    font-weight: 600;
-    color: var(--text-primary) !important;
+    background: linear-gradient(45deg, #FF512F, #F09819);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
 }
 
 .nav-link {
-    font-weight: 500;
-    color: var(--text-secondary) !important;
-    transition: color 0.2s ease;
+    position: relative;
+    transition: all 0.3s ease !important;
+    border-radius: 8px;
+    margin: 0 2px;
+    font-weight: 700;
+    color: var(--text-primary) !important;
 }
 
 .nav-link:hover {
-    color: var(--primary-color) !important;
+    background-color: var(--nav-hover);
+    transform: translateY(-1px);
+    color: #000000 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(45deg, #FF512F, #F09819);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
 }
 
 /* Tables */
 .table {
-    background-color: var(--card-background);
+    background: var(--card-background);
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    font-family: 'Sintony', sans-serif;
     border-collapse: separate;
     border-spacing: 0;
     margin-bottom: 2rem;
 }
 
 .table thead th {
-    background-color: rgba(0, 0, 0, 0.02);
-    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(45deg, 
+        rgba(255, 81, 47, 0.05), 
+        rgba(240, 152, 25, 0.05));
+    border-bottom: none;
     color: var(--text-secondary);
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.5px;
@@ -69,6 +115,7 @@ body {
     padding: 1rem;
     border-bottom: 1px solid var(--border-color);
     color: var(--text-primary);
+    font-weight: 400;
 }
 
 .table tbody tr:last-child td {
@@ -76,15 +123,16 @@ body {
 }
 
 .table tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(255, 81, 47, 0.03);
 }
 
 /* Buttons */
 .btn {
+    font-family: 'Sintony', sans-serif;
     border-radius: 980px;
     padding: 0.6rem 1.2rem;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 700;
     transition: all 0.2s ease;
     border: none;
 }
@@ -122,12 +170,14 @@ body {
 
 /* Forms */
 .form-control {
+    font-family: 'Sintony', sans-serif;
     border-radius: 12px;
     border: 1px solid var(--border-color);
     padding: 0.8rem 1rem;
     font-size: 1rem;
     transition: all 0.2s ease;
     background-color: #F5F5F7;
+    font-weight: 400;
 }
 
 .form-control:focus {
@@ -138,31 +188,66 @@ body {
 
 /* Content Cards */
 .content-card {
-    background-color: var(--card-background);
+    background: var(--card-background);
     border-radius: 16px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     padding: 2rem;
     margin-bottom: 2rem;
+    position: relative;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+}
+
+.content-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(45deg, #FF512F, #F09819, #FFEB3B);
+    z-index: -1;
+    border-radius: 17px;
+    opacity: 0.2;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    color: var(--text-primary);
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    color: #2d2d2f;
     margin-bottom: 1.5rem;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: -0.5px;
+    color: #3d3d3f;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5, h6 {
+    font-size: 1rem;
 }
 
 /* Alerts */
 .alert {
+    font-family: 'Sintony', sans-serif;
     border-radius: 12px;
     border: none;
     padding: 1rem 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .alert-danger {
@@ -182,13 +267,19 @@ h1 {
 
 /* Modal */
 .modal-content {
-    border-radius: 16px;
+    background: var(--card-background);
     border: none;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    font-family: 'Sintony', sans-serif;
+    border-radius: 16px;
+    font-weight: 400;
 }
 
 .modal-header {
-    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(45deg, 
+        rgba(255, 81, 47, 0.05), 
+        rgba(240, 152, 25, 0.05));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 1.5rem;
 }
 
@@ -197,12 +288,28 @@ h1 {
     padding: 1.5rem;
 }
 
+.modal-title {
+    font-weight: 700;
+}
+
 /* Footer */
 .footer {
-    background-color: var(--card-background);
-    padding: 1.5rem 0;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+    border-top: 2px solid #2d2d2f;
+    color: #2d2d2f;
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background-color: #7d7d7d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 0.85rem;
 }
 
 /* Table status indicators */
@@ -217,10 +324,65 @@ h1 {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
     .table {
         font-size: 0.9rem;
     }
+} 
+
+/* Labels and form elements */
+label, 
+.form-label {
+    font-weight: 700;
+}
+
+/* Badges */
+.badge {
+    background: linear-gradient(45deg, #FF512F, #F09819) !important;
+    border: none;
+    padding: 0.5em 0.8em;
+    font-weight: 700;
+}
+
+.badge.bg-warning {
+    background: linear-gradient(45deg, #F09819, #FFEB3B) !important;
+}
+
+.badge.bg-success {
+    background: linear-gradient(45deg, #29B35B, #82D616) !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #FF512F, #F09819);
+    border-radius: 4px;
+}
+
+/* Animations */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+.gradient-text {
+    background: linear-gradient(90deg, #ff0080, #8000ff); /* Pink to Purple gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
 } 

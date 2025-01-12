@@ -190,9 +190,7 @@
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/nezrqnk58p-muycvpuwrr.gz
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/v0zgfp0y55-87fc7y1x7t.gz
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/yfc7ypekbg-mlv21k5csn.gz
-/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-b9sayid5wm.gz
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/8jyi9xjz6s-61n19gt1b8.gz
-/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-xtxxf3hu2r.gz
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/88u7w7use3-bqjiyaj88i.gz
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/7w2zi56jks-c2jlpeoesf.gz
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0uwlc7gzbg-erw9l3u2r3.gz
@@ -269,4 +267,7 @@
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/DamianMatysik_BDwAI_Project.pdb
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/DamianMatysik_BDwAI_Project.genruntimeconfig.cache
 /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/ref/DamianMatysik_BDwAI_Project.dll
-/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz
+/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/DamianMatysik_BDwAI_Project.sourcelink.json
+/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-lugek5hnai.gz
+/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-fr7q2aak1r.gz
+/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-ycq30u1bkf.gz

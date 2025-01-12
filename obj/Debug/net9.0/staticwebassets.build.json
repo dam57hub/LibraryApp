@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jNQU4PYof50P/sEgy9bgRmJgniV8i2MhHeses9356Ok=",
+  "Hash": "M46LrePp9k9aM36+cyU0W2gt4+Z32rRQepT2ZHHRoPI=",
   "Source": "DamianMatysik_BDwAI_Project",
   "BasePath": "_content/DamianMatysik_BDwAI_Project",
   "Mode": "Default",
@@ -1382,12 +1382,12 @@
       "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-xtxxf3hu2r.gz",
+      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-fr7q2aak1r.gz",
       "SourceId": "DamianMatysik_BDwAI_Project",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DamianMatysik_BDwAI_Project",
-      "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=fr7q2aak1r}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/js/site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pmnrhqz0gl",
-      "Integrity": "YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg=",
+      "Fingerprint": "vcryxhm7wu",
+      "Integrity": "AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/js/site.js"
@@ -3209,12 +3209,12 @@
       "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-ycq30u1bkf.gz",
       "SourceId": "DamianMatysik_BDwAI_Project",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DamianMatysik_BDwAI_Project",
-      "RelativePath": "css/custom#[.{fingerprint=gf2v7ucdge}]?.css.gz",
+      "RelativePath": "css/custom#[.{fingerprint=ycq30u1bkf}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3223,8 +3223,8 @@
       "RelatedAsset": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jmpd7riyov",
-      "Integrity": "Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=",
+      "Fingerprint": "2sb0hqxv2d",
+      "Integrity": "omS5vTdx8Q1R7iiS+WKFLU8XQrOBQQKHggj7l2Kauqk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css"
@@ -3566,12 +3566,12 @@
       "OriginalItemSpec": "/Users/dmatysik/.nuget/packages/microsoft.aspnetcore.identity.ui/9.0.0/staticwebassets/V5/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-b9sayid5wm.gz",
+      "Identity": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-lugek5hnai.gz",
       "SourceId": "DamianMatysik_BDwAI_Project",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/DamianMatysik_BDwAI_Project",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=lugek5hnai}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3580,8 +3580,8 @@
       "RelatedAsset": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pw5l7j5n1s",
-      "Integrity": "KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=",
+      "Fingerprint": "fap03slvfg",
+      "Integrity": "B2NcGeycNm1fppl5ueYw/SoIaM1eiU6mnFitSmrq4lY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/site.css"
@@ -4063,8 +4063,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gf2v7ucdge",
-      "Integrity": "9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=",
+      "Fingerprint": "ycq30u1bkf",
+      "Integrity": "zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/custom.css"
@@ -4084,8 +4084,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "lugek5hnai",
+      "Integrity": "zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -4126,8 +4126,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "fr7q2aak1r",
+      "Integrity": "y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
@@ -5396,12 +5396,12 @@
   "Endpoints": [
     {
       "Route": "css/custom.css",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-ycq30u1bkf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000765696784"
+          "Quality": "0.000483091787"
         }
       ],
       "ResponseHeaders": [
@@ -5411,15 +5411,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1305"
+          "Value": "2069"
         },
         {
           "Name": "ETag",
-          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+          "Value": "\"omS5vTdx8Q1R7iiS+WKFLU8XQrOBQQKHggj7l2Kauqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+          "Value": "Sun, 12 Jan 2025 12:51:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5439,13 +5439,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+          "Value": "W/\"zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+          "Value": "sha256-zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g="
         }
       ]
     },
@@ -5460,7 +5460,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4613"
+          "Value": "7958"
         },
         {
           "Name": "Content-Type",
@@ -5468,11 +5468,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+          "Value": "\"zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+          "Value": "Sun, 12 Jan 2025 12:51:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5482,13 +5482,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+          "Value": "sha256-zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g="
         }
       ]
     },
     {
       "Route": "css/custom.css.gz",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-ycq30u1bkf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5497,7 +5497,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1305"
+          "Value": "2069"
         },
         {
           "Name": "Content-Type",
@@ -5505,11 +5505,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+          "Value": "\"omS5vTdx8Q1R7iiS+WKFLU8XQrOBQQKHggj7l2Kauqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+          "Value": "Sun, 12 Jan 2025 12:51:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5527,18 +5527,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw="
+          "Value": "sha256-omS5vTdx8Q1R7iiS+WKFLU8XQrOBQQKHggj7l2Kauqk="
         }
       ]
     },
     {
-      "Route": "css/custom.gf2v7ucdge.css",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "Route": "css/custom.ycq30u1bkf.css",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-ycq30u1bkf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000765696784"
+          "Quality": "0.000483091787"
         }
       ],
       "ResponseHeaders": [
@@ -5548,15 +5548,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1305"
+          "Value": "2069"
         },
         {
           "Name": "ETag",
-          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+          "Value": "\"omS5vTdx8Q1R7iiS+WKFLU8XQrOBQQKHggj7l2Kauqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+          "Value": "Sun, 12 Jan 2025 12:51:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5576,13 +5576,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+          "Value": "W/\"zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gf2v7ucdge"
+          "Value": "ycq30u1bkf"
         },
         {
           "Name": "label",
@@ -5590,12 +5590,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+          "Value": "sha256-zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g="
         }
       ]
     },
     {
-      "Route": "css/custom.gf2v7ucdge.css",
+      "Route": "css/custom.ycq30u1bkf.css",
       "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/custom.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5605,7 +5605,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4613"
+          "Value": "7958"
         },
         {
           "Name": "Content-Type",
@@ -5613,11 +5613,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4=\""
+          "Value": "\"zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+          "Value": "Sun, 12 Jan 2025 12:51:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5627,7 +5627,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gf2v7ucdge"
+          "Value": "ycq30u1bkf"
         },
         {
           "Name": "label",
@@ -5635,13 +5635,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9EIRLh8FwdXrMfgrS5vDqtvR642cXgLQPhh7Epqq0i4="
+          "Value": "sha256-zk/yplWhIGfSEHfgMT/fFVn6m597CK13OVUm0JgqP/g="
         }
       ]
     },
     {
-      "Route": "css/custom.gf2v7ucdge.css.gz",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-gf2v7ucdge.gz",
+      "Route": "css/custom.ycq30u1bkf.css.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/qem140yxuj-ycq30u1bkf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5650,7 +5650,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1305"
+          "Value": "2069"
         },
         {
           "Name": "Content-Type",
@@ -5658,11 +5658,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw=\""
+          "Value": "\"omS5vTdx8Q1R7iiS+WKFLU8XQrOBQQKHggj7l2Kauqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 20:12:40 GMT"
+          "Value": "Sun, 12 Jan 2025 12:51:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5680,7 +5680,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gf2v7ucdge"
+          "Value": "ycq30u1bkf"
         },
         {
           "Name": "label",
@@ -5688,168 +5688,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Beob7BZwkuGdRCSEXftcgYhBjnFezOW9kreYvOCAOCw="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-b9sayid5wm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003134796238"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "667"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-b9sayid5wm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA="
+          "Value": "sha256-omS5vTdx8Q1R7iiS+WKFLU8XQrOBQQKHggj7l2Kauqk="
         }
       ]
     },
@@ -5892,12 +5731,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-b9sayid5wm.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-lugek5hnai.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.003194888179"
         }
       ],
       "ResponseHeaders": [
@@ -5907,15 +5746,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "312"
         },
         {
           "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
+          "Value": "\"B2NcGeycNm1fppl5ueYw/SoIaM1eiU6mnFitSmrq4lY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
+          "Value": "Thu, 09 Jan 2025 21:52:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5935,13 +5774,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
         }
       ]
     },
@@ -5956,7 +5795,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "637"
         },
         {
           "Name": "Content-Type",
@@ -5964,11 +5803,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
+          "Value": "Thu, 09 Jan 2025 21:52:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5978,13 +5817,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-b9sayid5wm.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-lugek5hnai.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5993,7 +5832,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "312"
         },
         {
           "Name": "Content-Type",
@@ -6001,11 +5840,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
+          "Value": "\"B2NcGeycNm1fppl5ueYw/SoIaM1eiU6mnFitSmrq4lY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
+          "Value": "Thu, 09 Jan 2025 21:52:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6023,7 +5862,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA="
+          "Value": "sha256-B2NcGeycNm1fppl5ueYw/SoIaM1eiU6mnFitSmrq4lY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.lugek5hnai.css",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-lugek5hnai.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003194888179"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B2NcGeycNm1fppl5ueYw/SoIaM1eiU6mnFitSmrq4lY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 21:52:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lugek5hnai"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.lugek5hnai.css",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 21:52:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lugek5hnai"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.lugek5hnai.css.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/tt8kdzuwvb-lugek5hnai.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B2NcGeycNm1fppl5ueYw/SoIaM1eiU6mnFitSmrq4lY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 21:52:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lugek5hnai"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B2NcGeycNm1fppl5ueYw/SoIaM1eiU6mnFitSmrq4lY="
         }
       ]
     },
@@ -15490,6 +15490,167 @@
       ]
     },
     {
+      "Route": "js/site.fr7q2aak1r.js",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-fr7q2aak1r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005376344086"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 21:54:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fr7q2aak1r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.fr7q2aak1r.js",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/js/site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 21:54:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fr7q2aak1r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.fr7q2aak1r.js.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-fr7q2aak1r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 21:54:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fr7q2aak1r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "/Users/dmatysik/.nuget/packages/microsoft.aspnetcore.identity.ui/9.0.0/staticwebassets/js/site.js",
       "Selectors": [],
@@ -15528,12 +15689,12 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-xtxxf3hu2r.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-fr7q2aak1r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005263157895"
+          "Quality": "0.005376344086"
         }
       ],
       "ResponseHeaders": [
@@ -15543,15 +15704,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "189"
+          "Value": "185"
         },
         {
           "Name": "ETag",
-          "Value": "\"YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg=\""
+          "Value": "\"AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
+          "Value": "Thu, 09 Jan 2025 21:54:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15571,13 +15732,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "W/\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
         }
       ]
     },
@@ -15592,7 +15753,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "227"
         },
         {
           "Name": "Content-Type",
@@ -15600,11 +15761,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
+          "Value": "Thu, 09 Jan 2025 21:54:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15614,13 +15775,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-xtxxf3hu2r.gz",
+      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-fr7q2aak1r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15629,7 +15790,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "189"
+          "Value": "185"
         },
         {
           "Name": "Content-Type",
@@ -15637,11 +15798,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg=\""
+          "Value": "\"AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
+          "Value": "Thu, 09 Jan 2025 21:54:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15659,168 +15820,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-xtxxf3hu2r.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.005263157895"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "189"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/wwwroot/js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js.gz",
-      "AssetFile": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/Debug/net9.0/compressed/0ytjybbbas-xtxxf3hu2r.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "189"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 16:41:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YTkfXSHFEnZ6310TKacrOsSM7+9iBIEpAwW6DhmB2Rg="
+          "Value": "sha256-AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI="
         }
       ]
     },

@@ -4,18 +4,18 @@
     ViewData["Title"] = "Manage Book Loans";
 }
 
-<h1>Manage Book Loans</h1>
+<h1>Manage book loans</h1>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN</th>
-            <th>Status</th>
-            <th>Current Borrower</th>
-            <th>Expected Return</th>
-            <th>Actions</th>
+            <th><i class="bi bi-book"></i> Title</th>
+            <th><i class="bi bi-person"></i> Author</th>
+            <th><i class="bi bi-upc"></i> ISBN</th>
+            <th><i class="bi bi-info-circle"></i> Status</th>
+            <th><i class="bi bi-person-circle"></i> Current Borrower</th>
+            <th><i class="bi bi-calendar"></i> Expected Return</th>
+            <th><i class="bi bi-gear"></i> Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -40,13 +40,15 @@
                         <form asp-action="ReturnBook" method="post" style="display: inline;">
                             @Html.AntiForgeryToken()
                             <input type="hidden" name="bookId" value="@book.BookId" />
-                            <button type="submit" class="btn btn-success btn-sm">Accept Return</button>
+                            <button type="submit" class="btn btn-success btn-sm">
+                                <i class="bi bi-check-circle"></i> Accept Return
+                            </button>
                         </form>
                     }
                     else
                     {
                         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#lendModal-@book.BookId">
-                            Lend Book
+                            <i class="bi bi-box-arrow-right"></i> Lend Book
                         </button>
 
                         <!-- Modal for lending book -->
