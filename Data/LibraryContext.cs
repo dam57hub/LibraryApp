@@ -39,6 +39,12 @@ namespace LibraryApp.Data
                 .WithMany(book => book.Borrowings)
                 .HasForeignKey(b => b.BookId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Book>()
+                .HasMany(b => b.Borrowings)
+                .WithOne(b => b.Book)
+                .HasForeignKey(b => b.BookId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

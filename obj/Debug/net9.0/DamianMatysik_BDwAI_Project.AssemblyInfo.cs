@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DamianMatysik_BDwAI_Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afab971942bc24d453413c50fc2d6ed46270c6c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb3dccb5e1be4d6a03d40ad62dcf74fda3d7ade3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DamianMatysik_BDwAI_Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DamianMatysik_BDwAI_Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

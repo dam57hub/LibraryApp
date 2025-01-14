@@ -59,6 +59,61 @@ public class AuthorsController : Controller
         return View(author);
     }
 
+    // GET: Authors/Edit/{id}
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Edit(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var author = await _context.Authors.FindAsync(id);
+        if (author == null)
+        {
+            return NotFound();
+        }
+
+        return View(author);
+    }
+
+    // POST: Authors/Edit/{id}
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Edit(int id, [Bind("AuthorId,Name")] Author author)
+    {
+        if (id != author.AuthorId)
+        {
+            return NotFound();
+        }
+
+        try
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Update(author);
+                await _context.SaveChangesAsync();
+                _logger.LogInformation($"Successfully updated author with ID: {author.AuthorId}");
+                return RedirectToAction(nameof(Index));
+            }
+        }
+        catch (DbUpdateConcurrencyException ex)
+        {
+            if (!await AuthorExists(author.AuthorId))
+            {
+                return NotFound();
+            }
+            else
+            {
+                _logger.LogError($"Error updating author: {ex}");
+                ModelState.AddModelError("", "Unable to save changes. Try again.");
+            }
+        }
+
+        return View(author);
+    }
+
     // GET: Authors/Delete/{id}
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int? id)
@@ -108,5 +163,10 @@ public class AuthorsController : Controller
             ModelState.AddModelError("", "Unable to delete the author. Please ensure all related books are deleted first.");
             return View(author);
         }
+    }
+
+    private async Task<bool> AuthorExists(int id)
+    {
+        return await _context.Authors.AnyAsync(e => e.AuthorId == id);
     }
 } 

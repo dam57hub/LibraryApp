@@ -94,6 +94,77 @@ public class BooksController : Controller
         return View(book);
     }
 
+    // GET: Books/Edit/{id}
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Edit(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var book = await _context.Books
+            .Include(b => b.Author)
+            .FirstOrDefaultAsync(b => b.BookId == id);
+
+        if (book == null)
+        {
+            return NotFound();
+        }
+
+        ViewBag.Authors = await _context.Authors.ToListAsync();
+        return View(book);
+    }
+
+    // POST: Books/Edit/{id}
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,ISBN,AuthorId")] Book book)
+    {
+        if (id != book.BookId)
+        {
+            return NotFound();
+        }
+
+        ModelState.Remove("Author");
+
+        try
+        {
+            if (ModelState.IsValid)
+            {
+                var authorExists = await _context.Authors.AnyAsync(a => a.AuthorId == book.AuthorId);
+                if (!authorExists)
+                {
+                    ModelState.AddModelError("AuthorId", "Selected author does not exist");
+                    _logger.LogWarning($"Invalid AuthorId: {book.AuthorId}");
+                }
+                else
+                {
+                    _context.Update(book);
+                    await _context.SaveChangesAsync();
+                    _logger.LogInformation($"Successfully updated book with ID: {book.BookId}");
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+        }
+        catch (DbUpdateConcurrencyException ex)
+        {
+            if (!await BookExists(book.BookId))
+            {
+                return NotFound();
+            }
+            else
+            {
+                _logger.LogError($"Error updating book: {ex}");
+                ModelState.AddModelError("", "Unable to save changes. Try again.");
+            }
+        }
+
+        ViewBag.Authors = await _context.Authors.ToListAsync();
+        return View(book);
+    }
+
     // GET: Books/Delete/{id}
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int? id)
@@ -122,9 +193,7 @@ public class BooksController : Controller
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        var book = await _context.Books
-            .Include(b => b.Borrowings)
-            .FirstOrDefaultAsync(b => b.BookId == id);
+        var book = await _context.Books.FindAsync(id);
 
         if (book == null)
         {
@@ -133,12 +202,6 @@ public class BooksController : Controller
 
         try
         {
-            if (book.Borrowings.Any(b => b.ReturnDate == null))
-            {
-                ModelState.AddModelError("", "Cannot delete book while it is borrowed.");
-                return View(book);
-            }
-
             _context.Books.Remove(book);
             await _context.SaveChangesAsync();
             _logger.LogInformation($"Successfully deleted book with ID: {id}");
@@ -150,5 +213,10 @@ public class BooksController : Controller
             ModelState.AddModelError("", "Unable to delete the book. Please try again.");
             return View(book);
         }
+    }
+
+    private async Task<bool> BookExists(int id)
+    {
+        return await _context.Books.AnyAsync(e => e.BookId == id);
     }
 }

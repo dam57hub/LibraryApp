@@ -25,6 +25,7 @@ namespace LibraryApp.Models
         
         public virtual Author Author { get; set; }
 
+        [InverseProperty("Book")]
         public virtual ICollection<Borrowing> Borrowings 
         { 
             get => _borrowings ?? (_borrowings = new List<Borrowing>());
