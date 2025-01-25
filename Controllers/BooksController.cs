@@ -4,6 +4,8 @@ using LibraryApp.Data;
 using LibraryApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 public class BooksController : Controller
 {
@@ -184,6 +186,13 @@ public class BooksController : Controller
             return NotFound();
         }
 
+        // Check if book is borrowed
+        if (book.Borrowings != null && book.Borrowings.Any(b => b.ReturnDate == null))
+        {
+            TempData["Error"] = "Cannot delete a book that is currently borrowed.";
+            return RedirectToAction(nameof(Index));
+        }
+
         return View(book);
     }
 
@@ -193,11 +202,20 @@ public class BooksController : Controller
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        var book = await _context.Books.FindAsync(id);
+        var book = await _context.Books
+            .Include(b => b.Borrowings)
+            .FirstOrDefaultAsync(b => b.BookId == id);
 
         if (book == null)
         {
             return NotFound();
+        }
+
+        // Double-check if book is borrowed before deletion
+        if (book.Borrowings != null && book.Borrowings.Any(b => b.ReturnDate == null))
+        {
+            TempData["Error"] = "Cannot delete a book that is currently borrowed.";
+            return RedirectToAction(nameof(Index));
         }
 
         try
@@ -212,6 +230,82 @@ public class BooksController : Controller
             _logger.LogError($"Error deleting book: {ex}");
             ModelState.AddModelError("", "Unable to delete the book. Please try again.");
             return View(book);
+        }
+    }
+
+    // GET: Books/Import
+    [Authorize(Roles = "Admin")]
+    public IActionResult Import()
+    {
+        return View();
+    }
+
+    // POST: Books/Search
+    [HttpPost]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Search(string searchQuery)
+    {
+        if (string.IsNullOrEmpty(searchQuery))
+        {
+            return Json(new { error = "Search query is required" });
+        }
+
+        using (var client = new HttpClient())
+        {
+            var response = await client.GetAsync($"https://openlibrary.org/search.json?q={Uri.EscapeDataString(searchQuery)}");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Json(content);
+            }
+            return Json(new { error = "Failed to fetch data from OpenLibrary" });
+        }
+    }
+
+    // POST: Books/ImportBook
+    [HttpPost]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> ImportBook([FromBody] OpenLibraryBook book)
+    {
+        if (book == null)
+        {
+            return BadRequest("No book data provided");
+        }
+
+        try
+        {
+            // Check if author exists, if not create new
+            var author = await _context.Authors
+                .FirstOrDefaultAsync(a => a.Name == book.AuthorName);
+
+            if (author == null)
+            {
+                author = new Author { Name = book.AuthorName };
+                _context.Authors.Add(author);
+                await _context.SaveChangesAsync();
+            }
+
+            // Generate random internal book number (format: XXX-XXXXXXXXXX)
+            Random random = new Random();
+            string internalNumber = $"{random.Next(100, 999)}-{random.Next(1000000000, 2147483647)}";
+
+            // Create new book
+            var newBook = new Book
+            {
+                Title = book.Title,
+                ISBN = internalNumber, // Using generated number instead of ISBN
+                AuthorId = author.AuthorId
+            };
+
+            _context.Books.Add(newBook);
+            await _context.SaveChangesAsync();
+
+            return Json(new { success = true, message = "Book imported successfully" });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error importing book: {ex}");
+            return Json(new { success = false, message = "Failed to import book" });
         }
     }
 

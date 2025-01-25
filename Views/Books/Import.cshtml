@@ -1,0 +1,102 @@
+@{
+    ViewData["Title"] = "Import Book";
+}
+
+<h1>Import Book from OpenLibrary</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="mb-3">
+            <div class="input-group">
+                <input type="text" id="searchQuery" class="form-control" placeholder="Enter book title...">
+                <button class="btn btn-primary" id="searchButton">Search</button>
+            </div>
+        </div>
+
+        <div id="searchResult" class="d-none">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="bookTitle"></h5>
+                    <p class="card-text" id="bookAuthor"></p>
+                    <p class="card-text" id="bookIsbn"></p>
+                    <button class="btn btn-success" id="importButton">Import Book</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="alertArea"></div>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('searchButton').addEventListener('click', async () => {
+            const query = document.getElementById('searchQuery').value;
+            if (!query) return;
+
+            try {
+                const response = await fetch('/Books/Search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `searchQuery=${encodeURIComponent(query)}`
+                });
+
+                const data = await response.json();
+                const result = JSON.parse(data);
+
+                if (result.docs && result.docs.length > 0) {
+                    const book = result.docs[0];
+                    document.getElementById('searchResult').classList.remove('d-none');
+                    document.getElementById('bookTitle').textContent = book.title;
+                    document.getElementById('bookAuthor').textContent = `Author: ${book.author_name?.[0] || 'Unknown'}`;
+                    document.getElementById('bookIsbn').textContent = 'Internal Book Number will be generated upon import';
+                    
+                    // Store book data for import
+                    window.bookToImport = {
+                        title: book.title,
+                        authorName: book.author_name?.[0] || 'Unknown',
+                        isbn: null // We'll generate this on the server side
+                    };
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+
+        document.getElementById('importButton').addEventListener('click', async () => {
+            if (!window.bookToImport) return;
+
+            try {
+                const response = await fetch('/Books/ImportBook', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(window.bookToImport)
+                });
+
+                const result = await response.json();
+                const alertArea = document.getElementById('alertArea');
+                alertArea.innerHTML = `
+                    <div class="alert alert-${result.success ? 'success' : 'danger'} mt-3">
+                        ${result.message}
+                    </div>
+                `;
+
+                if (result.success) {
+                    setTimeout(() => {
+                        window.location.href = '/Books';
+                    }, 2000);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+} 

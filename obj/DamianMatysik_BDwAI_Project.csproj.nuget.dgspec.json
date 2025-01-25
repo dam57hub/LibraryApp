@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj": {}
+    "/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj": {}
   },
   "projects": {
-    "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj": {
+    "/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj",
+        "projectUniqueName": "/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj",
         "projectName": "DamianMatysik_BDwAI_Project",
-        "projectPath": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj",
+        "projectPath": "/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj",
         "packagesPath": "/Users/dmatysik/.nuget/packages/",
-        "outputPath": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/obj/",
+        "outputPath": "/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dmatysik/.nuget/NuGet/NuGet.Config"

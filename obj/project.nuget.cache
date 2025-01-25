@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XG0J6T3etgg=",
+  "dgSpecHash": "ZR0zhWzFycI=",
   "success": true,
-  "projectFilePath": "/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj",
+  "projectFilePath": "/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/DamianMatysik_BDwAI_Project.csproj",
   "expectedPackageFiles": [
     "/Users/dmatysik/.nuget/packages/bouncycastle.cryptography/2.3.1/bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "/Users/dmatysik/.nuget/packages/google.protobuf/3.26.1/google.protobuf.3.26.1.nupkg.sha512",

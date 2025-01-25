@@ -17,93 +17,97 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DamianMatysik_BDwAI_Project
 build_property.RootNamespace = DamianMatysik_BDwAI_Project
-build_property.ProjectDir = /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/
+build_property.ProjectDir = /Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project
+build_property.MSBuildProjectDirectory = /Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Authors/Create.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Authors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9ycy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Authors/Delete.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Authors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9ycy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Authors/Edit.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Authors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9ycy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Authors/Index.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Authors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9ycy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Books/Create.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Books/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Books/Delete.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Books/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Books/Edit.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Books/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Books/Index.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Books/Import.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvSW1wb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Books/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Borrowings/Manage.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Borrowings/Manage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9ycm93aW5ncy9NYW5hZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Borrowings/MyBooks.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Borrowings/MyBooks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9ycm93aW5ncy9NeUJvb2tzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Home/Index.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Home/Privacy.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Reviews/Create.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Reviews/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV2aWV3cy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Reviews/Index.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Reviews/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV2aWV3cy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Shared/Error.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Shared/_LoginPartial.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/_ViewImports.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/_ViewStart.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/dmatysik/Desktop/VS_CODE/DamianMatysik_BDwAI_Project/Views/Shared/_Layout.cshtml]
+[/Users/dmatysik/Downloads/DamianMatysik_BDwAI_Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9cv607x40o

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using LibraryApp.Data;
 using LibraryApp.Models;
 using System.Text.Json.Serialization;
+using System.ComponentModel.DataAnnotations;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -27,7 +28,7 @@ public class BooksApiController : ControllerBase
             {
                 b.BookId,
                 b.Title,
-                b.ISBN,
+                internal_book_number = b.ISBN,
                 Author = new
                 {
                     b.Author.AuthorId,
@@ -63,7 +64,7 @@ public class BooksApiController : ControllerBase
         {
             book.BookId,
             book.Title,
-            book.ISBN,
+            internal_book_number = book.ISBN,
             Author = new
             {
                 book.Author.AuthorId,
@@ -82,7 +83,7 @@ public class BooksApiController : ControllerBase
 
     // POST: api/BooksApi
     [HttpPost]
-    public async Task<ActionResult<Book>> PostBook(Book book)
+    public async Task<ActionResult<Book>> PostBook([FromBody] BookCreateDto book)
     {
         if (!ModelState.IsValid)
         {
@@ -95,28 +96,49 @@ public class BooksApiController : ControllerBase
             return BadRequest("Selected author does not exist");
         }
 
-        _context.Books.Add(book);
+        var newBook = new Book
+        {
+            Title = book.Title,
+            ISBN = book.internal_book_number,
+            AuthorId = book.AuthorId
+        };
+
+        _context.Books.Add(newBook);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetBook), new { id = book.BookId }, book);
+        return CreatedAtAction(nameof(GetBook), new { id = newBook.BookId }, new
+        {
+            newBook.BookId,
+            newBook.Title,
+            internal_book_number = newBook.ISBN,
+            AuthorId = newBook.AuthorId
+        });
     }
 
     // PUT: api/BooksApi/5
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutBook(int id, Book book)
+    public async Task<IActionResult> PutBook(int id, [FromBody] BookUpdateDto bookDto)
     {
-        if (id != book.BookId)
+        if (id != bookDto.BookId)
         {
             return BadRequest();
         }
 
-        var authorExists = await _context.Authors.AnyAsync(a => a.AuthorId == book.AuthorId);
+        var authorExists = await _context.Authors.AnyAsync(a => a.AuthorId == bookDto.AuthorId);
         if (!authorExists)
         {
             return BadRequest("Selected author does not exist");
         }
 
-        _context.Entry(book).State = EntityState.Modified;
+        var book = await _context.Books.FindAsync(id);
+        if (book == null)
+        {
+            return NotFound();
+        }
+
+        book.Title = bookDto.Title;
+        book.ISBN = bookDto.internal_book_number;
+        book.AuthorId = bookDto.AuthorId;
 
         try
         {
@@ -161,5 +183,29 @@ public class BooksApiController : ControllerBase
     private bool BookExists(int id)
     {
         return _context.Books.Any(e => e.BookId == id);
+    }
+
+    public class BookCreateDto
+    {
+        [Required]
+        public string Title { get; set; }
+        
+        [Required]
+        public string internal_book_number { get; set; }
+        
+        public int AuthorId { get; set; }
+    }
+
+    public class BookUpdateDto
+    {
+        public int BookId { get; set; }
+        
+        [Required]
+        public string Title { get; set; }
+        
+        [Required]
+        public string internal_book_number { get; set; }
+        
+        public int AuthorId { get; set; }
     }
 } 

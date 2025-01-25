@@ -4,14 +4,14 @@
     ViewData["Title"] = "Manage Book Loans";
 }
 
-<h1>Manage book loans</h1>
+<h1>Manage Book Loans</h1>
 
-<table class="table">
+<table class="table manage-loans">
     <thead>
         <tr>
             <th><i class="bi bi-book"></i> Title</th>
             <th><i class="bi bi-person"></i> Author</th>
-            <th><i class="bi bi-upc"></i> ISBN</th>
+            <th><i class="bi bi-upc"></i> Internal Book Number</th>
             <th><i class="bi bi-info-circle"></i> Status</th>
             <th><i class="bi bi-person-circle"></i> Current Borrower</th>
             <th><i class="bi bi-calendar"></i> Expected Return</th>
@@ -27,7 +27,20 @@
                 <td>@book.Title</td>
                 <td>@(book.Author?.Name ?? "No Author")</td>
                 <td>@book.ISBN</td>
-                <td>@(currentBorrowing != null ? "Borrowed" : "Available")</td>
+                <td>
+                    @if (currentBorrowing != null)
+                    {
+                        <span class="badge bg-warning text-dark">
+                            <i class="bi bi-clock"></i> Borrowed
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success">
+                            <i class="bi bi-check-circle"></i> Available
+                        </span>
+                    }
+                </td>
                 <td>
                     @(currentBorrowing?.User?.UserName ?? "-")
                 </td>

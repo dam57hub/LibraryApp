@@ -4,23 +4,25 @@
     ViewData["Title"] = "Authors";
 }
 
-<h1>All Authors</h1>
+<h1>Authors</h1>
 
 @if (User.IsInRole("Admin"))
 {
     <p>
-        <a asp-action="Create" class="btn btn-primary">Create New</a>
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Create New
+        </a>
     </p>
 }
 
 <table class="table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Number of Books</th>
+            <th><i class="bi bi-person"></i> Name</th>
+            <th><i class="bi bi-book"></i> Books Count</th>
             @if (User.IsInRole("Admin"))
             {
-                <th>Actions</th>
+                <th><i class="bi bi-gear"></i> Actions</th>
             }
         </tr>
     </thead>
@@ -29,12 +31,16 @@
         {
             <tr>
                 <td>@item.Name</td>
-                <td>@item.Books.Count</td>
+                <td>@item.Books?.Count</td>
                 @if (User.IsInRole("Admin"))
                 {
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.AuthorId" class="btn btn-sm btn-warning">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@item.AuthorId" class="btn btn-sm btn-danger">Delete</a>
+                        <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.AuthorId">
+                            <i class="bi bi-pencil"></i> Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.AuthorId">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
                     </td>
                 }
             </tr>

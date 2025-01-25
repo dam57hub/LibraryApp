@@ -2,7 +2,44 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>to the Library App</p>
+<div class="welcome-section">
+    <h1>Welcome to Virtual Library App</h1>
+    <p>Discover thousands of books at your fingertips</p>
+    <a href="@Url.Action("Index", "Books")" class="browse-collection">Browse Collection</a>
 </div>
+
+<div class="row mt-4 justify-content-center">
+    <div class="col-md-4">
+        <div class="feature-box">
+            <i class="bi bi-collection"></i>
+            <h3>Vast Collection</h3>
+            <p>Access thousands of books across various genres</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="feature-box">
+            <i class="bi bi-mouse"></i>
+            <h3>Easy Access</h3>
+            <p>Rent books with just a few clicks</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="feature-box">
+            <i class="bi bi-clock-history"></i>
+            <h3>24/7 Available</h3>
+            <p>Access your books anytime, anywhere</p>
+        </div>
+    </div>
+</div>
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div class="signup-section text-center mt-4">
+        <h2>Ready to start reading?</h2>
+        <p class="mb-4">Join our community of book lovers today!</p>
+        <div class="auth-buttons">
+            <a href="/Identity/Account/Register" class="btn btn-primary btn-md signup-button me-3">Sign Up Now</a>
+            <a href="/Identity/Account/Login" class="btn btn-outline-primary btn-md login-button">Log In</a>
+        </div>
+    </div>
+}
